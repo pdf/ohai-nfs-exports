@@ -28,7 +28,7 @@ Ohai.plugin(:NfsExports) do
 
       exportfs.stdout.each_line do |line|
         if line =~ /^\//
-          export = line
+          export = line.strip
           nfs[:exports][export] = Mash.new
         else
           client_match = /^\s+([^\s\(]+)\((.*)\)/.match(line)
