@@ -4,7 +4,7 @@ maintainer_email  'ruby@0xc0dedbad.com'
 license           'MIT'
 description       'A tiny Ohai plugin to populate attributes for NFS exports'
 long_description  IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version           '0.0.1'
+version           '0.0.2'
 
 %w{debian ubuntu}.each do |os|
   supports os
